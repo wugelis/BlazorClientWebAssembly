@@ -1,0 +1,23 @@
+﻿@page "/"
+
+@functions {
+    public string GetShouldCutString()
+    {
+        return "Hello functions for Razor.";
+    }
+}
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<p>
+    <input @bind="CurrentValue" /> Current value: @CurrentValue
+</p>
+
+@code {
+    private string CurrentValue { get; set; }
+}
+
